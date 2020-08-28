@@ -4,7 +4,7 @@ now_year = datetime.datetime.now().year
 now_month = datetime.datetime.now().month
 now_day = datetime.datetime.now().day
 
-birth_year, birth_month, birth_day = map(int, input('출생 년월일 입력(년월일은 .으로 구분) : ').split('.'))
+birth_year, birth_month, birth_day = map(int, input('출생날짜 입력(ex. 2020.8.28) : ').split('.'))
 
 if now_month > birth_month:                     # 현재월 > 생월(생일 지남)
     age = now_year - birth_year    
